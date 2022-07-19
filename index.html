@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+    <link href="style.css" rel="stylesheet">
+    <body>
+        <h2>JavaScript For Loop</h2>
+
+        <p id="demo9"></p>
+
+
+        <div id="test0"></div>
+        <div id="test1"></div>
+        <div id="test2"></div>
+        <div id="test3"></div>
+        <div id="test4"></div>
+        <div id="test5"></div>
+        <div id="test6"></div>
+        <div id="test7"></div>
+        <div id="test8"></div>
+        <div id="test9"></div>
+
+        <script>
+            let a = 10;
+
+            for (let i = 0; i <= a; i++)
+            {
+                a = a + 10;
+            document.getElementById("test" + i).innerHTML = a;
+            }
+        </script>
+
+        <p id="demo"></p>
+
+        <script>
+            let text="";
+
+            for (let i = 0; i < 5; i++) {
+                text += "Hello World" + i + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        </script>
+
+        <p id="demo2"></p>
+
+        <script>
+            const cars = ["BMW", "Volvo", "Saab", "Ford"];
+            let i = 0;
+            let x ="";
+
+            for (;cars[i];) {
+                x += cars[i];
+                i++;
+            }
+
+            document.getElementById("demo2").innerHTML = x;
+        </script>
+
+        <p id="demo3"></p>
+
+        <script>
+            const fruit = ["Apple", "Banana", "Mango"];
+            let u = 0;
+            let y ="";
+
+            while (fruit[u]) {
+                y += fruit[u];
+                u++;
+            }
+
+            document.getElementById("demo3").innerHTML = y;
+        </script>
+
+        <p id="demo4"></p>
+
+        <script>
+            const colour = ["Red", "Pink", "Purpal", "Blue"];
+
+            let o = "";
+            for (let z of colour) {
+                o += z + "<br>";
+            }
+
+            document.getElementById("demo4").innerHTML = o;
+        </script>
+
+        <p id="demo5"></p>
+        <h2>Loop input</h2>
+
+       Student marks
+        <input type="text" id="inp1" /><br/><br/>
+
+        <button onClick="submit()">Submit</button>
+
+        <script>
+            function submit() {
+                const a = 100;
+            for (i = 0; i < a; i++)
+            
+
+            document.getElementById("demo5").innerHTML = inp1;
+            } 
+        </script>
+
+        <button id="btn" onclick="doAction()">Send</button>
+
+        <script>
+            var doAction = function () {
+                var input = document.getElementById('numberinput');
+                var times = parseint(input.value);
+
+                for(var i = 0; i < times; i++) {
+                    // do whatever you need to do
+                }
+            }
+        </script>
+
+        <p id="demo6"></p>
+
+        <script>
+            const n = 5;
+            text = "";
+
+            for (let i = 1; i <= n; i++) {
+                text += "Loop function" + i + "<br>"; 
+
+            }
+            document.getElementById("demo5").innerHTML = text;
+        </script>
+
+        <p id="demo7"></p>
+
+        <tr>
+            <th>
+                Firstname
+            </th>
+            <th>
+                Lastname
+            </th>
+            <th>
+                Age
+            </th>
+        </tr>
+
+        <script>
+            const marks = ["25", "32", "47", "13", "56"];
+            text = "";
+
+            for (let i = 1; i <= marks; i++) {
+                if (marks = 35) {
+                text += "pass" + i + "<br>";
+                } else 
+                text += "fail" + i + "<br>";
+            }
+
+            document.getElementById("demo7").innerHTML = text;
+
+        </script>
+
+        </body>
+        </html>
